@@ -9,5 +9,4 @@ Redmineのクエリパラメータに複数の値を指定できるようにし�
 
 * cf_3 はidが3のカスタムフィールド
 
-http://localhost:3000/projects/hoge/issues.json?cf_3=1,2
-
+[http://localhost:3000/projects/hoge/issues.json?cf_3=1,2](http://localhost:3000/projects/hoge/issues.json?cf_3=1,2)

@@ -9,5 +9,5 @@ This plugin allows querying with multiple values for a field.
 
 * cf_3 is a custom field that id is 3
 
-http://localhost:3000/projects/hoge/issues.json?cf_3=1,2
+[http://localhost:3000/projects/hoge/issues.json?cf_3=1,2](http://localhost:3000/projects/hoge/issues.json?cf_3=1,2)
 
