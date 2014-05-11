@@ -1,4 +1,4 @@
-Redmine multiple values for query filter plugin
+Redmine multiple values filter plugin
 ===============
 
 Redmineのクエリパラメータに複数の値を指定できるようにします.

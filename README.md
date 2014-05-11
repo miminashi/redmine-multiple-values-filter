@@ -1,4 +1,4 @@
-Redmine multiple values for query filter plugin
+Redmine multiple values filter plugin
 ===============
 
 This plugin allows querying with multiple values for a field.
