@@ -107,13 +107,10 @@ module MultipleValuesFilterQueryPatch
     #end
 
     def sql_for_field_with_multiple_issues(field, operator, value, db_table, db_field, is_custom_filter=false)
-      puts "#{field}, #{operator}, #{value.inspect}, #{is_custom_filter}"
       sql = ''
       if type_for(field) == :integer and is_custom_filter
-        p value
         values = value.first.split(',').map{|s| s.to_i}
         sql = "(#{db_table}.#{db_field} <> '' AND CAST(CASE #{db_table}.#{db_field} WHEN '' THEN '0' ELSE #{db_table}.#{db_field} END AS decimal(30,3)) IN (#{values.join(',')}))"
-        p sql
       else
         sql = sql_for_field_without_multiple_issues(field, operator, value, db_table, db_field, is_custom_filter)
       end
